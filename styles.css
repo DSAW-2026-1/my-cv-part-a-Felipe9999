@@ -48,7 +48,63 @@ p.Footer{
     overflow: hidden;
     position: sticky;
     top: 0;
+    border-radius: 0 0 1em 1em;
 }
 a { 
     color: #f37421; 
 } 
+.siteGrid{
+    display: grid;
+    grid-template-columns: 30vw auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "info         formation"
+    "abilities    exp      "
+    "hobbies      exp      ";
+}
+@media screen and (min-width: 85vh){
+    .Info, .Abilities, .Hobbies{
+    background-color: rgba(128, 128, 128, 0.226);
+    margin: 0 1em;
+}
+}
+.Info{
+    grid-area: info;
+    border-radius: 1em 1em 0 0;
+    margin: 1em 1em 0 1em;
+}
+.Formation{
+    grid-area: formation;
+}
+.Experience{
+    grid-area: exp;
+}
+.Abilities{
+    grid-area: abilities;
+}
+.Hobbies{
+    grid-area: hobbies;
+    border-radius: 0 0 1em 1em;
+    margin: 0 1em 1em 1em;
+}
+@media screen and (max-width: 130vh){
+        .siteGrid{
+        display: grid;
+        grid-template-columns: 40vw 60vw;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        "info         formation"
+        "info         formation"
+        "abilities    formation"
+        "abilities    exp      "
+        "abilities    exp      "
+        "abilities    exp      "
+        "hobbies      exp      "
+        "hobbies      exp      "
+    }
+}
+@media screen and (max-width: 85vh){
+        .siteGrid{
+        display: block;
+    }
+}
