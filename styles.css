@@ -6,17 +6,27 @@ html, body
     padding: 0;
 }
 .Title {
-    /*background-color: #101010;*/
     text-align: center;
     font-family: Calibri;
-    margin-left: 150px;
-    margin-right: 150px;
+    /*margin-left: 150px;
+    margin-right: 150px;*/
+    width: 80.25276461295418641390205371248%;
+    margin-left: auto;
+    margin-right: auto;
 }  
 h1.Title {
     font-size: 3em;
 }
 h2.Title {
     font-size: 2em;
+}
+h3.Title{
+    text-align: left;
+}
+.ListText{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Text {
     font-family: Calibri;
@@ -39,3 +49,6 @@ p.Footer{
     position: sticky;
     top: 0;
 }
+a { 
+    color: #f37421; 
+} 
